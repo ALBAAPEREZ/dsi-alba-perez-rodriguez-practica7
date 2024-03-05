@@ -1,1 +1,0 @@
-# dsi-alba-perez-rodriguez-practica7
