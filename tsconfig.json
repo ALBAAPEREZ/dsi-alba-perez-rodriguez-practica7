@@ -1,20 +1,18 @@
 {
-  "ignore": [
-    "./tests"
-  ],
   "exclude": [
     "./tests",
     "./node_modules",
-    "./dist"
+    "./dist",
+    ".nyc_output"
   ],
   "compilerOptions": {
     "target": "es2022",
     "module": "commonjs",
-    "declaration": true,
     "rootDir": "./src",
+    "declaration" : true,
     "outDir": "./dist",
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
   }
 }
