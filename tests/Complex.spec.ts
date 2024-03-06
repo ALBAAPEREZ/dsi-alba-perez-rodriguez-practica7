@@ -167,5 +167,31 @@ describe('Pruebas para la clase Complex', () => {
       const complex: Complex = new Complex(1, 1);
       expect(complex.divide(new Complex(1, 1))).to.be.an.instanceof(Complex);
     });
+    // comporbamos que tenga parte real e imaginaria
+    it ('Comprobar que tenga parte real e imaginaria', () => {
+      const complex: Complex = new Complex(1, 1);
+      expect(complex.divide(new Complex(1, 1)).real).to.be.a('number');
+      expect(complex.divide(new Complex(1, 1)).imaginary).to.be.a('number');
+    });
+    // Comprobar que no retorna tipos incorrectos
+    it ('Comprobar que no retorna tipos incorrectos', () => {
+      const complex: Complex = new Complex(1, 1);
+      expect(complex.divide(new Complex(1, 1)).real).to.be.a('number');
+      expect(complex.divide(new Complex(1, 1)).imaginary).to.be.a('number');
+    });
+    // Comprobar que es una función
+    it ('Comprobar que es una función', () => {
+      const complex: Complex = new Complex(1, 1);
+      expect(complex.divide).to.be.a('function');
+    });
+    // comprobar que implementa la interfaz Aritmeticable
+    it ('Comprobar que implementa la interfaz Aritmeticable', () => {
+      const complex: Complex = new Complex(1, 1);
+      expect(complex).to.have.property('add').that.is.a('function');
+      expect(complex).to.have.property('subtract').that.is.a('function');
+      expect(complex).to.have.property('multiply').that.is.a('function');
+      expect(complex).to.have.property('divide').that.is.a('function');
+    });
   });
+
 });

@@ -16,6 +16,19 @@ export class Rational implements Arithmeticable<Rational> {
   constructor(public numerator: number, public denominator: number) {}
 
   /**
+   * Método que devuelve el numerador de un número racional.
+   */
+  getNumerator(): number {
+    return this.numerator;
+  }
+
+  /**
+   * Método que devuelve el denominador de un número racional.
+   */
+  getDenominator(): number {
+    return this.denominator;
+  }
+  /**
    * Métod de suma de dos números racionales.
    * Lo que hace es sumar el numerador de un número racional por el denominador del otro y viceversa.
    * @param other otro número racional.

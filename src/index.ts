@@ -8,19 +8,20 @@ const complex = new Complex(3, 4);
 const rational = new Rational(2, 5);
 
 // Creamos instancias de adaptadores
-const complexNumber = new ComplexRationalAdapter(complex);
 const rationalNumber = new ComplexRationalAdapter(rational);
 
 // Realiza operaciones entre complejos y racionales
-const sumResult = complexNumber.add(rationalNumber);
-const subtractResult = complexNumber.subtract(rationalNumber);
-const multiplyResult = complexNumber.multiply(rationalNumber);
-const divideResult = complexNumber.divide(rationalNumber);
+const sumResult = rationalNumber.add(rationalNumber);
+const subtractResult = rationalNumber.subtract(rationalNumber);
+const multiplyResult = rationalNumber.multiply(rationalNumber);
+const divideResult = rationalNumber.divide(rationalNumber);
 
 // Mostramos los resultados
-console.log('Número Complejo:', complexNumber);
+console.log(''),
+console.log('Número Complejo:', complex);
+console.log('')
 console.log('Número Racional:', rationalNumber);
-console.log('Suma:', sumResult);
-console.log('Resta:', subtractResult);
-console.log('Multiplicación:', multiplyResult);
-console.log('División:', divideResult);
+console.log('La suma del numero complejo y el racional es:', sumResult);
+console.log('La resta del numero complejo y el racional es:', subtractResult);
+console.log('La multiplicación del numero complejo y el racional es:', multiplyResult);
+console.log('La división del numero complejo y el racional es:', divideResult);
