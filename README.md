@@ -1,0 +1,1 @@
+[![Coveralls](https://github.com/ALBAAPEREZ/dsi-alba-perez-rodriguez-practica7/actions/workflows/coveralls.yml/badge.svg)](https://github.com/ALBAAPEREZ/dsi-alba-perez-rodriguez-practica7/actions/workflows/coveralls.yml)
